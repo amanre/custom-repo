@@ -1,9 +1,9 @@
 #!/bin/bash
 
-rm custom_repo*
+rm custom-repo*
 
 echo "repo-add"
-repo-add -n -R custom_repo.db.tar.gz *.pkg.tar.zst
+repo-add -n -R custom-repo.db.tar.gz *.pkg.tar.zst
 sleep 5
 
 echo "####################################"

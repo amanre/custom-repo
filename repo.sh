@@ -1,14 +1,14 @@
 #!/bin/bash
 
 cd x86_64
-rm custom_repo*
+rm custom-repo*
 
 echo "repo-add"
-repo-add -n -R -v  custom_repo.db.tar.gz *.pkg.tar.zst
-rm -v custom_repo.db
-rm -v custom_repo.files
-mv -v custom_repo.db.tar.gz custom_repo.db
-mv -v custom_repo.files.tar.gz custom_repo.files
+repo-add -n -R -v  custom-repo.db.tar.gz *.pkg.tar.zst
+rm -v custom-repo.db
+rm -v custom-repo.files
+mv -v custom-repo.db.tar.gz custom-repo.db
+mv -v custom-repo.files.tar.gz custom-repo.files
 
 cd ..
 echo "####################################"
